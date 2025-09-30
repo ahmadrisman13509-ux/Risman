@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GJ Gojek Campalagian - Solusi Transportasi Lokal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #00aa13;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1603031962445-d50c8ce12ac3') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .hero button {
+      background-color: #00aa13;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .section {
+      padding: 60px 40px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #00aa13;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      background: #f0f0f0;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media(max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GJ Gojek Campalagian</h1>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Hubungi</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="beranda">
+    <h2>GJ Gojek Campalagian - Semua Bisa!</h2>
+    <p>Layanan lokal untuk transportasi, makanan, dan kirim barang di Campalagian dan sekitarnya.</p>
+    <button onclick="pesanSekarang()">Pesan Sekarang</button>
+  </section>
+
+  <section class="section" id="layanan">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="service">
+        <h3>GoRide</h3>
+        <p>Ojek motor lokal cepat dan aman di Campalagian.</p>
+      </div>
+      <div class="service">
+        <h3>GoCar</h3>
+        <p>Mobil nyaman untuk perjalanan Anda di wilayah Polewali Mandar.</p>
+      </div>
+      <div class="service">
+        <h3>GoFood</h3>
+        <p>Pesan makanan dari warung dan restoran sekitar Campalagian.</p>
+      </div>
+      <div class="service">
+        <h3>GoSend</h3>
+        <p>Layanan antar barang lokal yang cepat dan terpercaya.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tentang">
+    <h2>Tentang GJ Gojek Campalagian</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">
+      GJ Gojek Campalagian adalah layanan transportasi dan pengantaran lokal yang hadir untuk mendukung mobilitas dan kebutuhan harian masyarakat Campalagian. Dengan layanan cepat, aman, dan terpercaya, kami siap melayani Anda.
+    </p>
+  </section>
+
+  <section class="section" id="kontak">
+    <h2>Hubungi Kami</h2>
+    <div class="contact">
+      <p>Email: support@gjgojekcampalagian.com</p>
+      <p>Telepon: +62 852 1234 5678</p>
+      <p>Alamat: Jl. Poros Campalagian No.10, Polewali Mandar, Sulawesi Barat</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 GJ Gojek Campalagian. All rights reserved.
+  </footer>
+
+  <script>
+    function pesanSekarang() {
+      alert("Terima kasih! Anda akan diarahkan ke layanan GJ Gojek Campalagian.");
+      window.location.href = "https://www.gojek.com/"; // Ganti dengan link lokal jika ada
+    }
+  </script>
+
+</body>
+</html>
